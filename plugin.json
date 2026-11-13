@@ -1,0 +1,13 @@
+{
+  "name": "gemini4-only-guard",
+  "displayName": "Gemini 4 Only Guard",
+  "description": "PreToolUse hook and rule bundle that blocks non-Gemini-4 model selection in swarm calls and flash tier usage in subagents.",
+  "version": "1.0.0",
+  "author": "adahime",
+  "repository": "https://github.com/adahime/gemini4-only-guard",
+  "suggestedPrompts": [
+    "检查 gemini4-only-guard 当前状态",
+    "用 gemini-4-argon-high 启动 swarm 测试拦截是否放行",
+    "测试向 swarm 传入非 Gemini 4 模型是否直接拦截报错"
+  ]
+}

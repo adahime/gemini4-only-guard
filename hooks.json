@@ -1,0 +1,26 @@
+{
+  "gemini4-only-model-guard": {
+    "PreToolUse": [
+      {
+        "matcher": "swarm",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python scripts/gemini4_guard.py",
+            "timeout": 10
+          }
+        ]
+      },
+      {
+        "matcher": "invoke_subagent",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python scripts/gemini4_guard.py",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}
